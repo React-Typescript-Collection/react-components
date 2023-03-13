@@ -1,0 +1,136 @@
+// Define a variable for the box shadow
+$box-shadow: 0 2px 3px rgba(51, 51, 51, 0.2);
+
+// Define the base styles for the button
+.button {
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 8px 16px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: $box-shadow;
+  
+  &:focus {
+    outline: 0;
+  }
+  
+  // Define the styles for the start icon
+  #start_icon {
+    margin-right: 4px;
+  }
+  
+  // Define the styles for the end icon
+  #end_icon {
+    margin-left: 4px;
+  }
+  
+  // Define the default styles
+  &.default {
+    background: #e0e0e0;
+    color: #3f3f3f;
+    
+    &:hover {
+      background-color: #aeaeae;
+    }
+    
+    // Define the styles for a disabled button
+    &.disabled:hover {
+      background: #e0e0e0;
+    }
+  }
+  
+  // Define the outlined styles
+  &.outlined {
+    border: 1px solid #3d5afe;
+    color: #3d5afe;
+    background-color: white;
+    box-shadow: none;
+    
+    &:hover {
+      background: rgba(41, 98, 255, 0.1);
+    }
+  }
+  
+  // Define the text styles
+  &.text {
+    color: #3d5afe;
+    background: none;
+    box-shadow: none;
+    
+    &:hover {
+      background: rgba(41, 98, 255, 0.1);
+    }
+    
+    // Define the styles for a disabled button
+    &.disabled:hover {
+      background: none;
+    }
+  }
+  
+  // Define the primary styles
+  &.primary {
+    background: #2962ff;
+    color: white;
+    
+    &:hover {
+      background: #0039cb;
+    }
+  }
+  
+  // Define the secondary styles
+  &.secondary {
+    background-color: #455a64;
+    color: white;
+    
+    &:hover {
+      background: #1c313a;
+    }
+  }
+  
+  // Define the danger styles
+  &.danger {
+    background-color: #d32f2f;
+    color: white;
+    
+    &:hover {
+      background-color: #9a0007;
+    }
+  }
+  
+  // Define the no shadow styles
+  &.no-shadow {
+    box-shadow: none;
+  }
+  
+  // Define the disabled styles
+  &.disabled {
+    color: #9e9e9e;
+    cursor: default;
+  }
+  
+  // Define the small styles
+  &.small {
+    font-size: 12px;
+    padding: 6px 12px;
+    
+    .material-icons {
+      font-size: 18px;
+    }
+  }
+  
+  // Define the large styles
+  &.large {
+    font-size: 1.25rem;
+    padding: 11px 22px;
+    
+    .material-icons {
+      font-size: 1.8rem;
+    }
+  }
+}
