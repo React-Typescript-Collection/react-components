@@ -16,7 +16,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
  * Accepts props for variant, color, shadow, disabled, size, start and end icons, and content.
  * Passes any additional props to the button element.
  */
-const Button = ({
+const Button: React.FC<ButtonProps> = ({
   variant = "contained",
   color = "default",
   disableShadow = false,
@@ -25,7 +25,7 @@ const Button = ({
   endIcon,
   content = "Default",
   ...rest
-}: ButtonProps) => {
+}) => {
   const buttonStyle = `button ${variant} ${color ? color : ""} ${
     disableShadow ? "no-shadow" : ""
   } ${size}`;
