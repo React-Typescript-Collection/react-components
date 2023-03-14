@@ -1,5 +1,5 @@
 import React from 'react'
-import { BUTTONS_PATH, HOME_PATH } from '../../constants/routes'
+import { BUTTONS_PATH, HOME_PATH, LOADINGS_PATH } from '../../constants/routes'
 import { PrimaryNav, MenuLink, Menu, Hamburger } from './NavElement'
 
 const Navbar = () => {
@@ -14,8 +14,8 @@ const Navbar = () => {
           <MenuLink to={BUTTONS_PATH} >
             Buttons
           </MenuLink>
-          <MenuLink to="/products" >
-            Products
+          <MenuLink to={LOADINGS_PATH} >
+            Loadings
           </MenuLink>
           <MenuLink to="/blog" >
             Blog

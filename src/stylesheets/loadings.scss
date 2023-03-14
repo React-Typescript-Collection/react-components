@@ -1,0 +1,19 @@
+.loadings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.loading-container {
+  margin: 50px 5px;
+  min-width: 300px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  p {
+    font-size: 12px;
+    margin-top: 15px;
+  }
+}

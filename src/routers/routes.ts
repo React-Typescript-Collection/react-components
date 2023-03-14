@@ -1,4 +1,5 @@
 import Home from "../pages/Home";
+import Loadings from "../pages/Loadings";
 import * as ROUTES from "./../constants/routes";
 
 import Buttons from "./../pages/Buttons";
@@ -24,8 +25,8 @@ const routes: RouteType[] = [
     protected: false,
   },
   {
-    path: ROUTES.BUTTONS_PATH,
-    component: Buttons,
+    path: ROUTES.LOADINGS_PATH,
+    component: Loadings,
     name: "Home Screen",
     protected: false,
   },
