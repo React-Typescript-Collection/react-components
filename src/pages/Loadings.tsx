@@ -3,6 +3,8 @@ import Loading from "../components/Loading";
 import "./../stylesheets/loadings.scss";
 
 const Loadings = () => {
+  const types = ["bars", "bubbles", "cubes", "cylon", "spin", "spinningBubbles", "spokes"];
+
   return (
     <div className="App">
       <h1>Reusable loading component</h1>
@@ -20,40 +22,13 @@ const Loadings = () => {
           <p>{"<Loading /> / <Loading type=\"balls\">"}</p>
         </div>
 
-        <div className="loading-container">
-          <Loading type="bars"/>
-          <p>{"<Loading type=\"bars\">"}</p>
-        </div>
+        {types.map((type, index) => (
+          <div key={type+index} className="loading-container">
+            <Loading type={type}/>
+            <p>{"<Loading type=\"" + type + "\">"}</p>
+          </div>
+        ))}
 
-        <div className="loading-container">
-          <Loading type="bubbles"/>
-          <p>{"<Loading type=\"bubbles\">"}</p>
-        </div>
-
-        <div className="loading-container">
-          <Loading type="cubes"/>
-          <p>{"<Loading type=\"cubes\">"}</p>
-        </div>
-
-        <div className="loading-container">
-          <Loading type="cylon"/>
-          <p>{"<Loading type=\"cylon\">"}</p>
-        </div>
-
-        <div className="loading-container">
-          <Loading type="spin"/>
-          <p>{"<Loading type=\"spin\">"}</p>
-        </div>
-
-        <div className="loading-container">
-          <Loading type="spinningBubbles"/>
-          <p>{"<Loading type=\"spinningBubbles\">"}</p>
-        </div>
-
-        <div className="loading-container">
-          <Loading type="spokes"/>
-          <p>{"<Loading type=\"spokes\">"}</p>
-        </div>
       </div>
       
       
