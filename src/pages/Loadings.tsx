@@ -19,16 +19,16 @@ const Loadings = () => {
       <div className="loadings">
         <div className="loading-container">
           <Loading />
-          <p>{"<Loading /> / <Loading type=\"balls\">"}</p>
+          <p>{"<Loading /> / <Loading type=\"balls\"/>"}</p>
         </div>
 
         {types.map((type, index) => (
           <div key={type+index} className="loading-container">
             <Loading type={type}/>
-            <p>{"<Loading type=\"" + type + "\">"}</p>
+            <p>{"<Loading type=\"" + type + "\"/>"}</p>
           </div>
         ))}
-
+        
       </div>
       
       

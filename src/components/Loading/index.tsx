@@ -14,7 +14,7 @@ interface SvgSources {
 }
 
 const Loading: React.FC<LoadingProps> = ({
-  color = '#fff',
+  color = 'green',
   delay = 0,
   type = 'balls',
   height = 64,
