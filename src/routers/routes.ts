@@ -1,3 +1,4 @@
+import ContainerExample from "../pages/ContainerExample";
 import Home from "../pages/Home";
 import Loadings from "../pages/Loadings";
 import Modals from "../pages/Modals";
@@ -35,6 +36,12 @@ const routes: RouteType[] = [
     path: ROUTES.MODALS_PATH,
     component: Modals,
     name: "Modals Screen",
+    protected: false,
+  },
+  {
+    path: ROUTES.CONTAINER_EXAMPLE_PATH,
+    component: ContainerExample,
+    name: "ContainerExample Screen",
     protected: false,
   },
 ];
