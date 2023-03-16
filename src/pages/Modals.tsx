@@ -2,11 +2,6 @@ import React, { useState } from 'react';
 import AppModal from '../components/Modal';
 
 const Modals = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleModal = () => {
-    setIsOpen(prev => !prev);
-  };
 
   return (
     <div className="App">
@@ -23,7 +18,7 @@ const Modals = () => {
       <br/>
       <br/>
       <AppModal
-        isOpen={isOpen}
+        isOpen={false}
         onClose={() => {}}
       />
     </div>
