@@ -24,6 +24,9 @@ export const MenuLink = styled(Link)`
   text-decoration: none;
   padding: 0 1.2rem;
   height: 100%;
+  &.hover {
+    color: #fff;
+  }
   &.active {
     background-color: #1C2434;
   }

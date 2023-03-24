@@ -1,5 +1,5 @@
 import React from 'react';
-import { BUTTONS_PATH, CONTAINER_EXAMPLE_PATH, HOME_PATH, LOADINGS_PATH, MODALS_PATH } from '../../constants/routes';
+import { BUTTONS_PATH, CONTAINER_EXAMPLE_PATH, DRAWER_EXAMPLE_PATH, HOME_PATH, LOADINGS_PATH, MODALS_PATH } from '../../constants/routes';
 import { PrimaryNav, MenuLink, Menu, Hamburger } from './NavElement';
 
 interface MenuTypes {
@@ -27,6 +27,10 @@ const menus: MenuTypes[] = [
   {
     name: "Container Example",
     path: CONTAINER_EXAMPLE_PATH,
+  },
+  {
+    name: "Drawer Example",
+    path: DRAWER_EXAMPLE_PATH,
   },
 ]
 

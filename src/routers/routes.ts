@@ -5,6 +5,7 @@ import Modals from "../pages/Modals";
 import * as ROUTES from "./../constants/routes";
 
 import Buttons from "./../pages/Buttons";
+import DrawerExample from "../pages/DrawerExample";
 
 interface RouteType {
   path: string;
@@ -42,6 +43,12 @@ const routes: RouteType[] = [
     path: ROUTES.CONTAINER_EXAMPLE_PATH,
     component: ContainerExample,
     name: "ContainerExample Screen",
+    protected: false,
+  },
+  {
+    path: ROUTES.DRAWER_EXAMPLE_PATH,
+    component: DrawerExample,
+    name: "Drawer Screen",
     protected: false,
   },
 ];

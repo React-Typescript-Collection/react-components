@@ -7,6 +7,7 @@ import Col from 'react-bootstrap/Col';
 const ContainerExample = () => {
   return (
     <Container style={{ backgroundColor: "grey" }}>
+      {/* https://react-bootstrap.github.io/layout/grid/ */}
       <Row>
         <Col>1 of 2</Col>
         <Col>2 of 2</Col>

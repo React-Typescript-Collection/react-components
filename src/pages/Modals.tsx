@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import AppModal from '../components/Modal';
 
 const Modals = () => {
@@ -18,9 +18,7 @@ const Modals = () => {
 
       <br/>
       <br/>
-      <br/>
-      <AppModal
-      />
+      <AppModal />
     </div>
   )
 }
