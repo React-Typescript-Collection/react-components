@@ -1,7 +1,10 @@
 import React from "react";
+import { useDocumentTitle } from "../hooks";
 import Button from "./../components/Button";
 
 const Buttons = () => {
+  useDocumentTitle("Buttons");
+  
   return (
     <div className="App">
       <h1>Reusable button component</h1>

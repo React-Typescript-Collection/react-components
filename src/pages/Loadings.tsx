@@ -1,8 +1,11 @@
 import React from "react";
 import Loading from "../components/Loading";
+import { useDocumentTitle } from "../hooks";
 import "./../stylesheets/loadings.scss";
 
 const Loadings = () => {
+  useDocumentTitle("Loadings");
+  
   const types = ["bars", "bubbles", "cubes", "cylon", "spin", "spinningBubbles", "spokes"];
 
   return (

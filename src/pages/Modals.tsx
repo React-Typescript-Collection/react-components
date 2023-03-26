@@ -1,7 +1,9 @@
 import React from 'react';
 import AppModal from '../components/Modal';
+import { useDocumentTitle } from '../hooks';
 
 const Modals = () => {
+  useDocumentTitle("Modals");
 
   return (
     <div className="App">
@@ -23,4 +25,4 @@ const Modals = () => {
   )
 }
 
-export default Modals
+export default Modals;

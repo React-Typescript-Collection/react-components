@@ -1,6 +1,9 @@
 import React from "react";
+import { useDocumentTitle } from "../hooks";
 
 const Home = () => {
+  useDocumentTitle("Home");
+
   return (
     <div className="App">
       <h1>Reusable component</h1>
